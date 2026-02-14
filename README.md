@@ -83,6 +83,16 @@ Detailed modeling explanation available here:
 - Delay vs On-Time relationship analysis
 
 
+## Accessing the Dashboard
+
+The Power BI file (.pbix) is available inside the `/dashboard` folder.
+
+To explore the full model:
+1. Download the .pbix file
+2. Open it in Power BI Desktop
+3. Navigate across the three analytical pages
+
+
 ## Analytical Findings
 
 Key insights extracted from the dashboard:
