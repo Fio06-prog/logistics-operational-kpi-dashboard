@@ -1,144 +1,116 @@
-# Logistics Operational KPI Dashboard  
-Power BI | Business Analysis + Data Analytics
-
+# Logistics Operational KPI Dashboard (Power BI)
 
 ## Project Overview
 
-This project analyzes operational logistics performance using a KPI-driven framework to identify service inefficiencies, delay drivers, and operational risk patterns.
+This project analyzes logistics operational performance using KPI monitoring and risk segmentation techniques.  
+The objective is to provide decision-makers with a structured analytical framework to evaluate on-time performance, delay patterns, and operational risk exposure.
 
-The dashboard integrates business logic with data modeling best practices to provide executive-level visibility and analytical depth for operational decision-making.
+The dashboard is structured into three analytical pages:
+
+- Executive Overview  
+- Event Type Analysis  
+- Operational Risk Analysis  
 
 
 ## Business Context
 
-In logistics operations, on-time performance and SLA compliance directly impact:
+Logistics operations require continuous monitoring of service levels, delay rates, and SLA compliance.  
+Without structured KPI tracking, operational inefficiencies and risk concentration remain difficult to detect.
 
-- Customer satisfaction  
-- Contractual penalties  
-- Operational cost efficiency  
-- Carrier evaluation  
-- Strategic capacity planning  
-
-Delays and detention time generate measurable financial risk and service instability.  
-
-A structured KPI framework is necessary to translate raw operational data into actionable performance intelligence.
+This dashboard transforms raw operational data into executive-level insights.
 
 
 ## Business Problem Statement
 
-The organization lacks a centralized analytical framework to:
-
-- Monitor On-Time performance across regions
-- Identify high-risk operational states
-- Compare Delivery vs Pickup efficiency
-- Understand delay root causes
-- Evaluate SLA adherence vs target performance
-
-Without a structured model, decision-making remains reactive rather than strategic.
+- Limited visibility into overall on-time performance  
+- Lack of structured breakdown by event type  
+- No consolidated view of delay and detention impact  
+- Difficulty identifying operational risk concentration  
 
 
 ## KPI Framework Definition
 
-The following KPIs were selected based on operational relevance:
+Key performance indicators included:
 
-- **On-Time %** → Service reliability indicator  
-- **SLA Compliance %** → Contract adherence measurement  
-- **Delay Rate %** → Operational failure frequency  
-- **Avg Delay (min)** → Severity of service deviation  
-- **Avg Detention (min)** → Facility-level inefficiency indicator  
-- **Target Variance (pp)** → Gap-to-goal measurement  
+- On-Time Delivery %  
+- On-Time Pickup %  
+- SLA Compliance %  
+- Delay Rate %  
+- Average Delay (minutes)  
+- Average Detention (minutes)  
+- Performance vs Target (percentage points)
 
-These metrics enable multi-layer analysis:
-
-- Performance monitoring  
-- Risk detection  
-- Operational benchmarking  
-- Strategic planning  
-
-
-## Data Model Architecture
-
-The model follows star-schema logic with a dedicated Date dimension.
-
-Detailed modeling explanation available here:
-
- [Data Model Architecture](documentation/data-model-architecture.md)
+Each KPI supports operational monitoring and management decision-making.
 
 
 ## Dashboard Structure
 
-### Page 1 – Executive Overview
-- High-level KPI monitoring
-- Monthly target comparison
-- Performance trend vs SLA
+### 1. Executive Overview
 
-### Page 2 – Event Type Performance
-- Delivery vs Pickup comparison
-- Operational delay segmentation
-- Trend variance analysis
+Provides a high-level summary of operational performance, SLA compliance, and delay indicators.
 
-### Page 3 – Root Cause & Operational Risk
-- Worst-performing regions
-- State-level risk identification
-- Delay vs On-Time relationship analysis
+![Executive Overview](screenshots/executive-overview.png)
 
 
-## Accessing the Dashboard
+### 2. Event Type Analysis
 
-The Power BI file (.pbix) is available inside the `/dashboard` folder.
+Breakdown of operational events by delivery and pickup categories to identify performance gaps and delay patterns.
 
-To explore the full model:
-1. Download the .pbix file
-2. Open it in Power BI Desktop
-3. Navigate across the three analytical pages
+![Event Type Analysis](screenshots/event-type-analysis.png)
+
+
+### 3. Operational Risk Analysis
+
+Detailed view of performance distribution by state and operational segment to detect risk concentration.
+
+![Operational Risk Analysis](screenshots/operational-risk-analysis.png)
+
+
+## Data Model Architecture
+
+The data model follows clean analytical design principles:
+
+- Fact table containing operational event records  
+- Dimension tables for time, state, and event type  
+- Optimized relationships for drill-down analysis  
+- DAX measures for KPI calculations  
 
 
 ## Analytical Findings
 
-Key insights extracted from the dashboard:
-
-[Analytical Findings](documentation/analytical-findings.md)
+- Pickup performance significantly outperforms delivery performance.  
+- Delay rates remain structurally high compared to SLA targets.  
+- Certain states show concentrated underperformance patterns.  
+- Detention times contribute significantly to operational inefficiency.  
 
 
 ## Business Implications
 
-The analysis reveals:
-
-- Significant regional performance variation  
-- Higher average delay impact on On-Time % degradation  
-- Operational imbalance between Delivery and Pickup processes  
-- Risk concentration in specific states  
-
-These patterns indicate structural operational inefficiencies rather than isolated events.
+- Need for targeted performance improvement in delivery operations  
+- SLA compliance requires corrective operational measures  
+- Geographic performance segmentation enables focused interventions  
+- Continuous KPI monitoring improves strategic decision-making  
 
 
 ## Strategic Recommendations
 
-1. Implement regional performance monitoring routines  
-2. Introduce SLA risk alerts for underperforming states  
-3. Optimize detention time through facility process audits  
-4. Deploy KPI-based monthly operational reviews  
-5. Establish variance-based escalation thresholds  
-
-The framework supports scalable performance governance.
+- Implement targeted improvement plans for underperforming states  
+- Monitor delay root causes by event type  
+- Strengthen SLA tracking and exception management  
+- Introduce proactive performance dashboards for operations teams  
 
 
 ## Technical Stack
 
-- Power BI Desktop
-- DAX Measures
-- Star-Schema Data Modeling
-- Custom Date Dimension
-- KPI-Based Analytical Design
-- Conditional Formatting for Risk Segmentation
+- Power BI  
+- Power Query (Data Transformation)  
+- DAX (KPI Calculations)  
+- Star Schema Data Modeling  
 
 
-## Analytical Profile Positioning
+## Author
 
-This project reflects a hybrid profile:
-
-- Business Analysis (problem framing, KPI selection, decision logic)
-- Data Analytics (modeling, transformation, visualization, insight extraction)
-
-Designed for operational performance environments within logistics and supply chain industries.
+Fiorella  
+Business Informatics Student  
+Aspiring Data & Business Analyst
 
